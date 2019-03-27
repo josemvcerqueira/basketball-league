@@ -20,7 +20,7 @@ class App extends Component {
 								<span role="img" aria-label="poop" label="poop">
 									💩
 								</span>
-								Four oh Four oops{" "}
+								Four oh Four oops
 								<span role="img" aria-label="poop" label="poop">
 									💩
 								</span>
