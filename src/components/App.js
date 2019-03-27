@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import Players from "./Players";
 import Teams from "./Teams";
@@ -10,9 +10,24 @@ class App extends Component {
 		return (
 			<div>
 				<Navbar />
-				<Route exact path="/" component={Home} />
-				<Route path="/players" component={Players} />
-				<Route path="/teams" component={Teams} />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/players" component={Players} />
+					<Route path="/teams" component={Teams} />
+					<Route
+						render={() => (
+							<h1 className="text-center">
+								<span role="img" aria-label="poop" label="poop">
+									💩
+								</span>
+								Four oh Four oops{" "}
+								<span role="img" aria-label="poop" label="poop">
+									💩
+								</span>
+							</h1>
+						)}
+					/>
+				</Switch>
 			</div>
 		);
 	}
