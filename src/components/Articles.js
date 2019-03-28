@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import { getTeamsArticles } from "../api";
 import Article from "./Article";
+import Loading from "./Loading";
 
 class Articles extends Component {
 	state = {
@@ -25,7 +26,7 @@ class Articles extends Component {
 		const { teamId } = params;
 
 		return loading === true ? (
-			<h1>Loading</h1>
+			<Loading />
 		) : (
 			<div className="container two-column">
 				<Sidebar
@@ -43,7 +44,7 @@ class Articles extends Component {
 						>
 							{article =>
 								!article ? (
-									<h1>Loading</h1>
+									<Loading />
 								) : (
 									<div className="panel">
 										<article
