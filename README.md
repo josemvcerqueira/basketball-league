@@ -1,4 +1,70 @@
+# basketball-league
+
+This is a single web application that leverages the power of React-router to allow the visitor to
+access information dynamically. It has three main pages.
+
+-   Home
+    -   Specific Team's Page
+-   Players
+-   Teams
+
+## TL;DR
+
+To run the project right away:
+
+-   clone the repo with `git clone https://github.com/josemvcerqueira/basketball-league.git`
+-   install all project dependencies with `npm install`
+-   start the development server with `npm start`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What You're Getting
+
+```bash
+├── public
+│   ├── favicon.ico # React Icon.
+│   ├── index.html # DO NOT MODIFY
+│	└── manifest.json # DO NOT MODIFY
+├── src
+│   ├── components
+    │   ├── App.js # File responsible to manage routes
+    │   ├── Article.js # Component responsible to render team's article
+    │   ├── Articles.js # Stateful component that fetches articles
+    │   ├── Home.js # Stateful component that renders the home page
+    │   ├── Loading.js # Component responsible to display a loading bar on api calls
+    │   ├── Navbar.js # Simple Navbar with Link components from react-router-dom
+    │   ├── Players.js # Stateful component with Transition Group that displays the players
+    │   ├── Sidebar.js # Stateless sidebar component
+    │   ├── Team.js # Stateful component responsible to fetch team's data
+    │   ├── TeamLogo.js # File that contains the team logos - SVG
+    │   ├── TeamPage.js # Stateful component responsible to render the team's page
+    │   ├── Teams.js # Stateful component responsible to render team cards
+│   ├── api.js # File to simulate promises/api calls
+│   ├── dummy-data.js # File to simulate a database
+│   ├── index.css # Global styles.
+│   ├── index.js # This file is used for DOM rendering only.
+│	└── serviceWorker.js
+├── .eslintrc.json # Configuration for the format used in this app.
+├── .gitignore # Simple file to prevent unnedded files to be stored on GitHub.
+├── README.md - This file.
+├── package-lock.json # npm package manager file.
+└── package.json # npm package manager file.
+
+```
+
+## Backend Server
+
+The provided file [`api.js`](src/api.js) contains the methods you will need to perform necessary operations on the backend:
+
+-   [`getPlayers`]
+-   [`getTeam`]
+-   [`getTeamNames`]
+-   [`getArticle`]
+-   [`getTeamsArticles`]
+
+## Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 ## Available Scripts
 
@@ -9,23 +75,13 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -33,36 +89,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Purpose
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This repository is the final project for the React Fundamentals section of the Udacity Nanodegree program for React.
