@@ -30,6 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     │   ├── App.js # File responsible to manage routes
     │   ├── Article.js # Component responsible to render team's article
     │   ├── Articles.js # Stateful component that fetches articles
+    │   ├── DynamicImport.js # Stateful component to dynamically import components
     │   ├── Home.js # Stateful component that renders the home page
     │   ├── Loading.js # Component responsible to display a loading bar on api calls
     │   ├── Navbar.js # Simple Navbar with Link components from react-router-dom
